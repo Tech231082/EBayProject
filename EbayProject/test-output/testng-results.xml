@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="45280" started-at="2019-08-21T17:47:48Z" finished-at="2019-08-21T17:48:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="45280" started-at="2019-08-21T17:47:48Z" finished-at="2019-08-21T17:48:33Z">
+      <class name="com.ebay.qa.testCases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="8655" started-at="2019-08-21T17:47:48Z" finished-at="2019-08-21T17:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="logoImageTest()[pri:1, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="logoImageTest" duration-ms="120" started-at="2019-08-21T17:47:56Z" finished-at="2019-08-21T17:47:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="732" started-at="2019-08-21T17:47:56Z" finished-at="2019-08-21T17:47:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="7321" started-at="2019-08-21T17:47:57Z" finished-at="2019-08-21T17:48:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="test()[pri:2, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="test" duration-ms="1725" started-at="2019-08-21T17:48:04Z" finished-at="2019-08-21T17:48:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="742" started-at="2019-08-21T17:48:06Z" finished-at="2019-08-21T17:48:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="7432" started-at="2019-08-21T17:48:07Z" finished-at="2019-08-21T17:48:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginEbayTest()[pri:3, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="loginEbayTest" duration-ms="9406" started-at="2019-08-21T17:48:14Z" finished-at="2019-08-21T17:48:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginEbayTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="802" started-at="2019-08-21T17:48:24Z" finished-at="2019-08-21T17:48:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="7493" started-at="2019-08-21T17:48:25Z" finished-at="2019-08-21T17:48:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:4, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="loginPageTitleTest" duration-ms="53" started-at="2019-08-21T17:48:32Z" finished-at="2019-08-21T17:48:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.LoginPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="738" started-at="2019-08-21T17:48:32Z" finished-at="2019-08-21T17:48:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ebay.qa.testCases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

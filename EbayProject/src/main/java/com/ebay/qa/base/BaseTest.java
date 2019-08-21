@@ -14,22 +14,20 @@ import com.ebay.qa.util.TestUtil;
 
 public class BaseTest {
 	
-	static WebDriver driver;
-	static Properties prop;
+	public static WebDriver driver;
+	public static Properties prop;
 	
-	public BaseTest() {
-		prop=new Properties();
-		FileInputStream fis=null;
+	public BaseTest()  {
 		try {
-			fis = new FileInputStream("C:\\Users\\parmod.kumar\\git\\AmazonTest\\AmazonTest\\src\\main\\java\\com\\amazon\\qa\\config\\config.properties");
-		} catch (FileNotFoundException e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
+			prop=new Properties();
+			//FileInputStream fis;
+			
+				FileInputStream fis = new FileInputStream("C:\\Users\\parmod.kumar\\git\\EBayProject\\EbayProject\\src\\main\\java\\com\\ebay\\qa\\config\\config.properties");
+			 
+				prop.load(fis);
+			
 		}
-		try {
-			prop.load(fis);
-		} catch (IOException e) {
-			System.out.println(e.getMessage());
+		catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
@@ -42,12 +40,19 @@ public class BaseTest {
 			//launching chrome browser
 			driver=new ChromeDriver();
 		}else {
-System.setProperty("webdriver.gecko.driver", "C:/mytools/geckodriver.exe");
+       System.setProperty("webdriver.gecko.driver", "C:/mytools/geckodriver.exe");
 			
 			//launching chrome browser
 			driver=new FirefoxDriver();
 		}
+		
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.page_load_timeout, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(TestUtil.page_load_timeout, TimeUnit.SECONDS);
+		
+		//launch the url
+		driver.get(prop.getProperty("url"));
+		
 	}
 
 }
