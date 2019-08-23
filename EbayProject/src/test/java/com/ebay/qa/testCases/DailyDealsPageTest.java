@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.ebay.qa.base.BaseTest;
 import com.ebay.qa.pages.DailyDealsPage;
+import com.ebay.qa.pages.FeaturedPage;
 import com.ebay.qa.pages.HomePage;
 import com.ebay.qa.pages.LoginPage;
 
@@ -14,6 +15,7 @@ public class DailyDealsPageTest extends BaseTest {
 	LoginPage loginPage;
 	HomePage homePage;
 	DailyDealsPage dailyDealsPage;
+	FeaturedPage featuredPage;
 	
 	public DailyDealsPageTest(){
 		super();
@@ -26,6 +28,7 @@ public class DailyDealsPageTest extends BaseTest {
 		loginPage=new LoginPage();
 		homePage=new HomePage();
 		dailyDealsPage=new DailyDealsPage();
+		featuredPage=new FeaturedPage();
 		loginPage.clickOnSignInButton();
 		homePage=loginPage.loginEbay(prop.getProperty("username"), prop.getProperty("password"));
 		homePage.clickOnDailyDealsLink();
@@ -42,6 +45,18 @@ public class DailyDealsPageTest extends BaseTest {
 	public void varifyOtherDealsPresentTest() {
 		boolean flag=dailyDealsPage.varifyOtherDealsPresent();
 		Assert.assertTrue(flag);
+	}
+	
+	@Test
+	public void clickOnFeaturedLinkTest() {
+		featuredPage=dailyDealsPage.clickOnFeaturedLink();
+		String title=driver.getTitle();
+		Assert.assertEquals(title, "Daily Deals on eBay | Best deals and Free Shipping");
+	}
+	
+	@Test
+	public void clickOnTechPageLinkTest() {
+		dailyDealsPage.techPageLink();
 	}
 	
 	@AfterMethod

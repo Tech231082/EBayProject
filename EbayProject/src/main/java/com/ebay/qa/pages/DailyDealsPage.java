@@ -13,6 +13,12 @@ public class DailyDealsPage extends BaseTest{
 	@FindBy(linkText="Other Deals")
 	WebElement otherDeals;
 	
+	@FindBy(linkText="Featured")
+	WebElement featured;
+	
+	@FindBy(linkText="Tech")
+	WebElement tech;
+	
 	//initialize page objects
 	public DailyDealsPage() {
 		PageFactory.initElements(driver, this);
@@ -25,6 +31,17 @@ public class DailyDealsPage extends BaseTest{
 
 	public boolean varifyOtherDealsPresent() {
 		return otherDeals.isDisplayed();
+		
+	}
+	
+	public FeaturedPage clickOnFeaturedLink() {
+		featured.click();
+		return new FeaturedPage();
+	}
+	
+	public TechPage techPageLink() {
+		tech.click();
+		return new TechPage();
 		
 	}
 }
