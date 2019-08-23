@@ -11,6 +11,7 @@ public class HomePage extends BaseTest{
 	@FindBy(xpath="//div[@id='gh-top']//descendant::button[@id='gh-ug']")
 	WebElement usernameLabel;
 	
+	
 	@FindBy(className="gh-eb-li-a")
 	WebElement myEbay;
 	

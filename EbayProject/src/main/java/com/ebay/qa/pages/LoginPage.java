@@ -17,6 +17,9 @@ public class LoginPage extends BaseTest {
 		@FindBy(xpath="//a[contains(text(),'Sign in')]")
 		WebElement signin;
 		
+		@FindBy(linkText="register")
+		WebElement register;
+		
 		@FindBy(id="userid")
 		WebElement userid;
 		
@@ -52,6 +55,11 @@ public class LoginPage extends BaseTest {
 			
 		}
 		
+		public RegisterPage clickOnRegister() {
+			register.click();
+			return new RegisterPage();
+		}
+		
 		public HomePage loginEbay(String username,String password) {
 			userid.sendKeys(username);
 			pass.sendKeys(password);
@@ -59,4 +67,6 @@ public class LoginPage extends BaseTest {
 			return new HomePage();
 			
 		}
+
+		
 }

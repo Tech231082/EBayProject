@@ -1,61 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="99515" started-at="2019-08-23T04:20:59Z" finished-at="2019-08-23T04:22:38Z">
+  <suite name="Default suite" duration-ms="42546" started-at="2019-08-23T06:08:06Z" finished-at="2019-08-23T06:08:49Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="99515" started-at="2019-08-23T04:20:59Z" finished-at="2019-08-23T04:22:38Z">
-      <class name="com.ebay.qa.testCases.DailyDealsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="31901" started-at="2019-08-23T04:20:59Z" finished-at="2019-08-23T04:21:31Z">
+    <test name="Default test" duration-ms="42546" started-at="2019-08-23T06:08:06Z" finished-at="2019-08-23T06:08:49Z">
+      <class name="com.ebay.qa.testCases.HelpContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="21064" started-at="2019-08-23T06:08:06Z" finished-at="2019-08-23T06:08:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickOnFeaturedLinkTest()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="clickOnFeaturedLinkTest" duration-ms="1661" started-at="2019-08-23T04:21:31Z" finished-at="2019-08-23T04:21:33Z">
+        <test-method status="PASS" signature="searchHelpTest()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="searchHelpTest" duration-ms="157" started-at="2019-08-23T06:08:27Z" finished-at="2019-08-23T06:08:27Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnFeaturedLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="795" started-at="2019-08-23T04:21:33Z" finished-at="2019-08-23T04:21:33Z">
+        </test-method> <!-- searchHelpTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-08-23T06:08:27Z" finished-at="2019-08-23T06:08:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="16513" started-at="2019-08-23T04:21:33Z" finished-at="2019-08-23T04:21:50Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="21240" started-at="2019-08-23T06:08:27Z" finished-at="2019-08-23T06:08:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="clickOnTechPageLinkTest()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="clickOnTechPageLinkTest" duration-ms="1571" started-at="2019-08-23T04:21:50Z" finished-at="2019-08-23T04:21:51Z">
+        <test-method status="PASS" signature="verifyHelpLabelTest()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="verifyHelpLabelTest" duration-ms="45" started-at="2019-08-23T06:08:48Z" finished-at="2019-08-23T06:08:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnTechPageLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="1062" started-at="2019-08-23T04:21:51Z" finished-at="2019-08-23T04:21:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="24022" started-at="2019-08-23T04:21:53Z" finished-at="2019-08-23T04:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dailyDealsPageTitleTest()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="dailyDealsPageTitleTest" duration-ms="13" started-at="2019-08-23T04:22:17Z" finished-at="2019-08-23T04:22:17Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dailyDealsPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="750" started-at="2019-08-23T04:22:17Z" finished-at="2019-08-23T04:22:17Z">
+        </test-method> <!-- verifyHelpLabelTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.HelpContactsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-08-23T06:08:49Z" finished-at="2019-08-23T06:08:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="setUp" is-config="true" duration-ms="20342" started-at="2019-08-23T04:22:17Z" finished-at="2019-08-23T04:22:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="varifyOtherDealsPresentTest()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="varifyOtherDealsPresentTest" duration-ms="69" started-at="2019-08-23T04:22:38Z" finished-at="2019-08-23T04:22:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- varifyOtherDealsPresentTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.ebay.qa.testCases.DailyDealsPageTest@204f30ec]" name="tearDown" is-config="true" duration-ms="772" started-at="2019-08-23T04:22:38Z" finished-at="2019-08-23T04:22:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ebay.qa.testCases.DailyDealsPageTest -->
+      </class> <!-- com.ebay.qa.testCases.HelpContactsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
