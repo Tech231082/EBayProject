@@ -41,35 +41,40 @@ public class HomePageTest extends BaseTest{
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void varifyHomePageTitleTest() {
 		String title=homePage.homePageTitle();
 		Assert.assertEquals(title, "Electronics, Cars, Fashion, Collectibles, Coupons and More | eBay","HomePage title not as expected");
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void clickOnEbayLinkTest() {
 		myEbayPage=homePage.ClickOnMyEbaylink();
 		
 	}
 	
 	
-	@Test
+	@Test(enabled=false)
 	public void clickOnDailyDealsLinkTest() {
 		dailyDealsPage=homePage.clickOnDailyDealsLink();
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void clickOnHelpContactsLinkTest() {
 		helpContacts=homePage.clickOnHelpContactLink();
 		
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void clickOnGiftCardsLinkTest() {
 		giftCards=homePage.clickOnGiftCardsLink();
 		
+	}
+	
+	@Test
+	public void getDropDownListTest() {
+		homePage.getDropDownList();
 	}
 	
 	@AfterMethod

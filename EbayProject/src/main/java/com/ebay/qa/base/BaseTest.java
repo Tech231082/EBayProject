@@ -9,13 +9,17 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 import com.ebay.qa.util.TestUtil;
+import com.ebay.qa.util.WebDriverListener;
 
 public class BaseTest {
 	
 	public static WebDriver driver;
 	public static Properties prop;
+	public static EventFiringWebDriver e_driver;
+	public static WebDriverListener elistener;
 	
 	public BaseTest()  {
 		try {
@@ -45,6 +49,10 @@ public class BaseTest {
 			//launching chrome browser
 			driver=new FirefoxDriver();
 		}
+		elistener=new WebDriverListener();
+		e_driver=new EventFiringWebDriver(driver);
+		e_driver.register(elistener);
+		driver=e_driver;
 		
 		driver.manage().timeouts().pageLoadTimeout(TestUtil.page_load_timeout, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

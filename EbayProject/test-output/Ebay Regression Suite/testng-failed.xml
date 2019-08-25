@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Ebay Regression Suite]">
+  <listeners>
+    <listener class-name="com.qa.ebay.ExtentResportsListener.ExtentReportListner"/>
+  </listeners>
+  <test thread-count="5" name="Ebay regression Test(failed)">
+    <classes>
+      <class name="com.ebay.qa.testCases.HomePageTest">
+        <methods>
+          <include name="varifyHomePageTitleTest"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testCases.HomePageTest -->
+      <class name="com.ebay.qa.testCases.RegisterPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="regTitleTest"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testCases.RegisterPageTest -->
+      <class name="com.ebay.qa.testCases.DailyDealsPageTest">
+        <methods>
+          <include name="varifyOtherDealsPresentTest"/>
+          <include name="dailyDealsPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="clickOnTechPageLinkTest"/>
+          <include name="clickOnFeaturedLinkTest"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testCases.DailyDealsPageTest -->
+    </classes>
+  </test> <!-- Ebay regression Test(failed) -->
+</suite> <!-- Failed suite [Ebay Regression Suite] -->

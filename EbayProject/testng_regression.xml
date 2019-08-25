@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ebay Regression Suite">
+   <listeners>
+   <listener class-name="com.qa.ebay.ExtentResportsListener.ExtentReportListner"/>
+   </listeners>
+  <test thread-count="5" name="Ebay regression Test">
+    <classes>
+      <class name="com.ebay.qa.testCases.HelpContactsPageTest"/>
+      <class name="com.ebay.qa.testCases.HomePageTest"/>
+      <class name="com.ebay.qa.testCases.RegisterPageTest"/>
+      <class name="com.ebay.qa.testCases.GiftCardsPageTest"/>
+      <class name="com.ebay.qa.testCases.LoginPageTest"/>
+      <class name="com.ebay.qa.testCases.DailyDealsPageTest"/>
+    </classes>
+  </test> 
+</suite> 

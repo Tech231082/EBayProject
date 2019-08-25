@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Suite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.qa.ebay.ExtentResportsListener.ExtentReportListner"/>
+  </listeners>
+  <test thread-count="5" name="Sanity Test(failed)" parallel="classes">
+    <classes>
+      <class name="com.ebay.qa.testCases.LoginPageTest">
+        <methods>
+          <include name="loginEbayTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testCases.LoginPageTest -->
+      <class name="com.ebay.qa.testCases.HomePageTest">
+        <methods>
+          <include name="varifyHomePageTitleTest"/>
+          <include name="clickOnGiftCardsLinkTest"/>
+          <include name="clickOnHelpContactsLinkTest"/>
+          <include name="setUp"/>
+          <include name="teardown"/>
+          <include name="clickOnEbayLinkTest"/>
+          <include name="clickOnDailyDealsLinkTest"/>
+        </methods>
+      </class> <!-- com.ebay.qa.testCases.HomePageTest -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [Sanity Suite] -->

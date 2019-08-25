@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" >
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.ebay.qa.LoginPageTest"/>
+      <class name="com.ebay.qa.HomePageTest"/>
+      <class name="com.ebay.qa.RegisterPageTest"/>
+      <class name="com.ebay.qa.GiftCardsPageTest"/>
+      <class name="com.ebay.qa.HelpContactsPageTest"/>
+      <class name="com.ebay.qa.DailyDealsPageTest"/>
+    </classes>
+  </test> 
+</suite> 

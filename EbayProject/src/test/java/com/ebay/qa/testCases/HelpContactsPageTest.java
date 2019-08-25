@@ -44,7 +44,7 @@ public class HelpContactsPageTest extends BaseTest {
 	
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 }
