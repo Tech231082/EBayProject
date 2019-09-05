@@ -15,7 +15,7 @@ public class TestUtil extends BaseTest{
 
 	public static  void takeScreenShotAtEndOfTest() throws IOException{
 		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File dest=new File("C:\\JUnit\\eclipse-workspace\\Ebay\\screenShots\\"+System.currentTimeMillis()+".png");
+		File dest=new File("C:\\Users\\parmod.kumar\\git\\EBayProject\\EbayProject\\src\\main\\java\\screenShots\\"+System.currentTimeMillis()+".png");
 		FileUtils.copyFile(source,dest);
 		
 		
